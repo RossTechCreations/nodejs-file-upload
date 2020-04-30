@@ -5,7 +5,7 @@ const app = express();
 
 const UPLOAD_DIR = process.env.UPLOAD_DIR || './uploads/';
 const PORT = process.env.PORT || 3000;
-const ORIGIN = process.env.CORS_ORIGIN || 'http://localhost:3000';
+const ORIGIN = process.env.CORS_ORIGIN || 'http://localhost:4200';
 
 const upload = multer({dest: UPLOAD_DIR});
 
@@ -27,7 +27,7 @@ app.get('/', function (req, res) {
 });
 
 
-app.post('/api', upload.array('files'), function (req, res) {
+app.post('/api', upload.array('file'), function (req, res) {
     if (req.files === undefined || req.files.length === 0) {
         res.status(400).json({ error: 'Files are required' });
     }
