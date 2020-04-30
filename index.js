@@ -50,5 +50,6 @@ app.post('/api', upload.array('files'), function (req, res) {
 });
 
 app.listen(PORT, function () {
+    console.log('CORS_ORIGIN ' + ORIGIN);
     console.log('Working on port ' + PORT);
 });
