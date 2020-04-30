@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-file-upload",
+  "version": "1.0.0",
+  "description": "Simple Node.js-based file upload application meant for use for demo or test sites",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rossplt/nodejs-file-upload.git"
+  },
+  "keywords": [
+    "ndoejs",
+    "file",
+    "upload",
+    "demo"
+  ],
+  "author": "Firdouss Ross <hello@ross.my> (http://ross.my)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rossplt/nodejs-file-upload/issues"
+  },
+  "homepage": "https://github.com/rossplt/nodejs-file-upload#readme",
+  "dependencies": {
+    "express": "4.17.1",
+    "multer": "1.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "10.17.21",
+    "nodemon": "2.0.3"
+  }
+}
